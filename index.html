@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <h1 class="title"> <span>SPLI</span>TTER</h1>
+  <main class="main">
+    <div class="form__tips" id="formTips">
+      <form class="form__tips-bill">
+        <h2 class="subtitle">Bill</h2>
+        <div class="relative">
+          <img class="icon" src="/images/icon-dollar.svg" alt="icon-dollar"></img>
+          <input type="number" id="bill" class="bill__input" min="1">
+        </div>
+        <h2 class="subtitle">Select Tip %</h2>
+        <div class="tips__container" id="tips">
+          <button class="tip__btn" value="5">5%</button>
+          <button class="tip__btn" value="10">10%</button>
+          <button class="tip__btn" value="15">15%</button>
+          <button class="tip__btn" value="25">25%</button>
+          <button class="tip__btn" value="50">50%</button>
+          <input type="number" class="custom" id="custom" placeholder="Custom" min="1">
+        </div>
+        <h2 class="subtitle">Number of People</h2>
+        <div class="relative">
+          <img class="icon" src="/images/icon-person.svg" alt="icon-person">
+          <input class="bill__input" id="people" type="number" min="1" value="1">
+        </div>
+      </form>
+    </div>
+
+    <div class="tips__result">
+      <div class="labels">
+        <div>
+          <h2>Tip Amount</h2>
+          <p>/ person</p>
+        </div>
+        <div>
+          <h2>Total</h2>
+          <p>/ person</p>
+        </div>
+      </div>
+      <div class="results__container">
+        <h2 class="" id="amount">0,00</h2>
+        <h2 class="" id="total">0,00</h2>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/camilo-fernandez-dev" target="_blank">Camilo Fenández Frontend
+      Dev</a>.
+  </div>
+
+  <script src="/scripts/main.js"></script>
+</body>
+
+</html>
